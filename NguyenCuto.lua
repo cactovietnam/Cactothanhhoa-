@@ -127,7 +127,7 @@ local eRow=mkRow("egg",52);rLbl(eRow,"Tên trứng","Gõ hoặc chọn nhanh")
 local eBox=Instance.new("TextBox",eRow);eBox.Size=UDim2.new(0.44,0,0,28);eBox.Position=UDim2.new(0.54,0,0.5,-14);eBox.BackgroundColor3=Color3.fromRGB(22,22,34);eBox.TextColor3=Color3.fromRGB(255,215,80);eBox.Text=TE;eBox.TextScaled=true;eBox.Font=Enum.Font.GothamBold;eBox.ClearTextOnFocus=false;eBox.BorderSizePixel=0;eBox.ZIndex=9
 Instance.new("UICorner",eBox).CornerRadius=UDim.new(0,6);Instance.new("UIStroke",eBox).Color=Color3.fromRGB(200,140,0)
 eBox.FocusLost:Connect(function()TE=eBox.Text;C.targetEgg=TE;saveS(C);eStat.Text="🥚  Target: "..TE end)
-local eggNames={"Blossom Egg","Rosette Egg","Gildron's Egg","Coral Egg","TideVex's Egg","Giant Tree Egg","Frostwyrm's Egg","Thunderclaw's Egg","GrassEgg","SwampEgg"}
+local eggNames={"Blossom Egg","Rosette Egg","Gildron's Egg","Coral Egg","TideVex's Egg","Giant Tree Egg","Frostwyrm's Egg","Thunderclaw's Egg","GrassEgg","SwampEgg","Dracospike's Egg"}
 local eHdr=Instance.new("TextLabel",pages["egg"]);eHdr.Size=UDim2.new(1,0,0,14);eHdr.BackgroundTransparency=1;eHdr.Text="Chọn nhanh:";eHdr.TextColor3=Color3.fromRGB(80,80,110);eHdr.TextScaled=true;eHdr.Font=Enum.Font.Gotham;eHdr.TextXAlignment=Enum.TextXAlignment.Left;eHdr.ZIndex=8;eHdr.LayoutOrder=no("egg")
 local eSF=Instance.new("ScrollingFrame",pages["egg"]);eSF.Size=UDim2.new(1,0,0,80);eSF.BackgroundColor3=Color3.fromRGB(13,13,20);eSF.BorderSizePixel=0;eSF.ScrollBarThickness=3;eSF.CanvasSize=UDim2.new(0,0,0,#eggNames*25);eSF.ZIndex=8;eSF.LayoutOrder=no("egg")
 Instance.new("UICorner",eSF).CornerRadius=UDim.new(0,8);Instance.new("UIStroke",eSF).Color=Color3.fromRGB(38,38,58);Instance.new("UIListLayout",eSF).Padding=UDim.new(0,2)
